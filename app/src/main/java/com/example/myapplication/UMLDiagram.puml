@@ -1,0 +1,106 @@
+@startuml
+
+class MainActivity {
+  - topAnim: Animation
+  - image: ImageView
+  + onCreate(savedInstanceState: Bundle)
+}
+
+class UserProfile {
+  - gotocolor: Button
+  - gotoscene: Button
+  - gotolist: Button
+  - go2connect: Button
+  + onCreate(savedInstanceState: Bundle)
+}
+
+class Login {
+  - auth: FirebaseAuth
+  - callSignUp: Button
+  - image: ImageView
+  - logotext: TextView
+  - logotext2: TextView
+  - username: EditText
+  - password: EditText
+  - logInBtn: Button
+  + onCreate(savedInstanceState: Bundle)
+  + loginUser(view: View): void
+  - validateEmail(email: String): boolean
+  - validatePassword(password: String): boolean
+  - authenticateUser(email: String, password: String): void
+}
+
+class SignUp {
+  - auth: FirebaseAuth
+  - reguser: EditText
+  - regpass: EditText
+  - signUp: Button
+  - gotoLogin: Button
+  + onCreate(savedInstanceState: Bundle)
+}
+
+class ChooseColor {
+  - colorPicker: ImageView
+  - BrightnessBar: SeekBar
+  - hexView: View
+  - rgbView: View
+  - bitmap: Bitmap
+  - go2home: Button
+  - success: boolean
+  + onCreate(savedInstanceState: Bundle)
+}
+
+class CreateScene {
+  - colorpicker: ImageView
+  - Color1View: View
+  - Color2View: View
+  - Color3View: View
+  - colorValue1: String
+  - colorValue2: String
+  - colorValue3: String
+  - SceneName: TextView
+  - bitmap: Bitmap
+  - create: Button
+  - go2home: Button
+  - isFirstViewColored: boolean
+  - isSecondViewColored: boolean
+  + onCreate(savedInstanceState: Bundle)
+  + storeColorsInDatabase(colorName: String, selectedColors: List<String>): void
+  + showColorPickerDialog(color: int, view: View): void
+  + getColorAsString(view: View): String
+}
+
+class UserColors {
+  - scenename: String
+  - color1: String
+  - color2: String
+  - color3: String
+  + UserColors(scenename: String, color1: String, color2: String, color3: String)
+}
+
+class ConnectThread {
+  + onCreate(savedInstanceState: Bundle)
+}
+
+MainActivity --> UserProfile
+MainActivity --> Login
+MainActivity --> SignUp
+MainActivity --> ChooseColor
+MainActivity --> CreateScene
+MainActivity --> ConnectThread
+UserProfile --> ChooseColor
+UserProfile --> CreateScene
+UserProfile --> ConnectThread
+Login --> UserProfile
+Login --> SignUp
+Login --> ChooseColor
+Login --> ConnectThread
+ChooseColor --> UserProfile
+ChooseColor --> CreateScene
+ChooseColor --> ConnectThread
+CreateScene --> UserProfile
+CreateScene --> ConnectThread
+CreateScene --> ConnectThread
+ConnectThread --> UserProfile
+
+@enduml

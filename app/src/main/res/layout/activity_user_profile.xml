@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:id="@+id/userProfile">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#0096FF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#0096FF"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon"
+            android:layout_centerVertical="true"
+            android:id="@+id/profilePic"/>
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salma Mohamed"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee"
+            android:layout_toRightOf="@+id/profilePic"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salma253"
+            android:textSize="14sp"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@+id/profilePic"
+            android:layout_below="@id/ProfileName"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/connectBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ProfileName"
+            android:layout_toRightOf="@+id/profilePic"
+            android:backgroundTint="#26306A"
+            android:text="Connect"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/go2colorScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/bangers"
+            android:padding="20dp"
+            android:text="Choose Color"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:drawableLeft="@drawable/coloricon"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:clickable="true"/>
+        <Button
+            android:id="@+id/go2createScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/bangers"
+            android:padding="20dp"
+            android:text="Create Screen"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:drawableLeft="@drawable/createicon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:clickable="true"/>
+        <Button
+            android:id="@+id/go2ListScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/bangers"
+            android:padding="20dp"
+            android:text="List of Scenes"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:drawableLeft="@drawable/listicon"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

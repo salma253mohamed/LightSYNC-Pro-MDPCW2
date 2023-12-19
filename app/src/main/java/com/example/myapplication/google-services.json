@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265276425056",
+    "project_id": "lightsyncapp-1dc40",
+    "storage_bucket": "lightsyncapp-1dc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265276425056:android:a045c90f4f39f913ee5405",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbpyG3nSVxBZlq2p8-PEVEKtZWf_tBJ18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

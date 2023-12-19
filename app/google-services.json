@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "265276425056",
+    "firebase_url": "https://lightsyncapp-1dc40-default-rtdb.firebaseio.com",
+    "project_id": "lightsyncapp-1dc40",
+    "storage_bucket": "lightsyncapp-1dc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265276425056:android:1df187d126a7a986ee5405",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbpyG3nSVxBZlq2p8-PEVEKtZWf_tBJ18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
